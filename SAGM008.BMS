@@ -1,0 +1,288 @@
+SAGM008 DFHMSD LANG=COBOL,                                             -
+               MODE=INOUT,                                             -
+               STORAGE=AUTO,                                           -
+               TIOAPFX=YES,                                            -
+               TYPE=&&SYSPARM 
+SAGM008 DFHMDI SIZE=(24,80) 
+        DFHMDF LENGTH=4,                                               -
+               POS=(1,1),                                              -
+               INITIAL='GA08' 
+M008-USERID DFHMDF ATTRB=(FSET,NORM,PROT),                             -
+               LENGTH=8,                                               -
+               POS=(1,7) 
+        DFHMDF ATTRB=(ASKIP,BRT),                                      -
+               LENGTH=27,                                              -
+               POS=(1,18),                                             -
+               INITIAL='SISTEMA DE GESTAO DE ALUNOS' 
+        DFHMDF LENGTH=11,                                              -
+               POS=(1,54),                                             -
+               INITIAL='COBOL #CICS' 
+M008-DATA DFHMDF ATTRB=(FSET,NORM,PROT),                               -
+               LENGTH=10,                                              -
+               POS=(1,70) 
+        DFHMDF LENGTH=70,                                              -
+               POS=(2,1),                                              -
+               INITIAL='SAG - MAINFRAME  SELECAO - ALUNOS              -
+                  SAGPO008 #20 SAGM008' 
+M008-HORA DFHMDF ATTRB=(FSET,NORM,PROT),                               -
+               LENGTH=8,                                               -
+               POS=(2,72) 
+        DFHMDF LENGTH=79,                                              -
+               POS=(3,1),                                              -
+               INITIAL='------------------------------------------------
+               --------------------------------' 
+M008-PAGT DFHMDF LENGTH=4,                                             -
+               POS=(4,66),                                             -
+               INITIAL='PAG:' 
+M008-PAGI DFHMDF ATTRB=(FSET,NUM,UNPROT),                              -
+               LENGTH=3,                                               -
+               PICOUT='ZZ9',                                           -
+               POS=(4,71) 
+        DFHMDF LENGTH=1,                                               -
+               POS=(4,75),                                             -
+               INITIAL='/' 
+M008-PAGF DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                           -
+               LENGTH=3,                                               -
+               PICOUT='ZZ9',                                           -
+               POS=(4,77) 
+        DFHMDF LENGTH=18,                                              -
+               POS=(5,1),                                              -
+               INITIAL='SEL CODIGO    NOME' 
+* M008-SEL
+M008-SEL DFHMDF ATTRB=(FSET,NORM,UNPROT),                              -
+               LENGTH=1,                                               -
+               POS=(6,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(6,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO DFHMDF ATTRB=(FSET,NORM,PROT),                           -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(6,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO DFHMDF ATTRB=(FSET,NORM,PROT),                           -
+               LENGTH=65,                                              -
+               POS=(6,15) 
+* M008-SEL
+M008-SEL2 DFHMDF ATTRB=(FSET,NORM,UNPROT),                             -
+               LENGTH=1,                                               -
+               POS=(7,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(7,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO2 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(7,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO2 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=65,                                              -
+               POS=(7,15) 
+* M008-SEL
+M008-SEL3 DFHMDF ATTRB=(FSET,NORM,UNPROT),                             -
+               LENGTH=1,                                               -
+               POS=(8,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(8,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO3 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(8,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO3 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=65,                                              -
+               POS=(8,15) 
+* M008-SEL
+M008-SEL4 DFHMDF ATTRB=(FSET,NORM,UNPROT),                             -
+               LENGTH=1,                                               -
+               POS=(9,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(9,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO4 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(9,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO4 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=65,                                              -
+               POS=(9,15) 
+* M008-SEL
+M008-SEL5 DFHMDF ATTRB=(FSET,NORM,UNPROT),                             -
+               LENGTH=1,                                               -
+               POS=(10,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(10,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO5 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(10,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO5 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=65,                                              -
+               POS=(10,15) 
+* M008-SEL
+M008-SEL6 DFHMDF ATTRB=(FSET,NORM,UNPROT),                             -
+               LENGTH=1,                                               -
+               POS=(11,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(11,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO6 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(11,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO6 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=65,                                              -
+               POS=(11,15) 
+* M008-SEL
+M008-SEL7 DFHMDF ATTRB=(FSET,NORM,UNPROT),                             -
+               LENGTH=1,                                               -
+               POS=(12,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(12,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO7 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(12,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO7 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=65,                                              -
+               POS=(12,15) 
+* M008-SEL
+M008-SEL8 DFHMDF ATTRB=(FSET,NORM,UNPROT),                             -
+               LENGTH=1,                                               -
+               POS=(13,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(13,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO8 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(13,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO8 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=65,                                              -
+               POS=(13,15) 
+* M008-SEL
+M008-SEL9 DFHMDF ATTRB=(FSET,NORM,UNPROT),                             -
+               LENGTH=1,                                               -
+               POS=(14,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(14,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO9 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(14,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO9 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=65,                                              -
+               POS=(14,15) 
+* M008-SEL
+M008-SEL92 DFHMDF ATTRB=(FSET,NORM,UNPROT),                            -
+               LENGTH=1,                                               -
+               POS=(15,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(15,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO92 DFHMDF ATTRB=(FSET,NORM,PROT),                         -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(15,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO92 DFHMDF ATTRB=(FSET,NORM,PROT),                         -
+               LENGTH=65,                                              -
+               POS=(15,15) 
+* M008-SEL
+M008-SEL922 DFHMDF ATTRB=(FSET,NORM,UNPROT),                           -
+               LENGTH=1,                                               -
+               POS=(16,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(16,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO922 DFHMDF ATTRB=(FSET,NORM,PROT),                        -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(16,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO922 DFHMDF ATTRB=(FSET,NORM,PROT),                        -
+               LENGTH=65,                                              -
+               POS=(16,15) 
+* M008-SEL
+M008-SEL9222 DFHMDF ATTRB=(FSET,NORM,UNPROT),                          -
+               LENGTH=1,                                               -
+               POS=(17,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(17,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO9222 DFHMDF ATTRB=(FSET,NORM,PROT),                       -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(17,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO9222 DFHMDF ATTRB=(FSET,NORM,PROT),                       -
+               LENGTH=65,                                              -
+               POS=(17,15) 
+* M008-SEL
+M008-SEL92222 DFHMDF ATTRB=(FSET,NORM,UNPROT),                         -
+               LENGTH=1,                                               -
+               POS=(18,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(18,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO92222 DFHMDF ATTRB=(FSET,NORM,PROT),                      -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(18,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO92222 DFHMDF ATTRB=(FSET,NORM,PROT),                      -
+               LENGTH=65,                                              -
+               POS=(18,15) 
+* M008-SEL
+M008-SEL922222 DFHMDF ATTRB=(FSET,NORM,UNPROT),                        -
+               LENGTH=1,                                               -
+               POS=(19,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(19,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO922222 DFHMDF ATTRB=(FSET,NORM,PROT),                     -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(19,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO922222 DFHMDF ATTRB=(FSET,NORM,PROT),                     -
+               LENGTH=65,                                              -
+               POS=(19,15) 
+* M008-SEL
+M008-SEL9222222 DFHMDF ATTRB=(FSET,NORM,UNPROT),                       -
+               LENGTH=1,                                               -
+               POS=(20,2) 
+        DFHMDF LENGTH=0,                                               -
+               POS=(20,4) 
+* M008-CO-ALUNO
+M008-CO-ALUNO9222222 DFHMDF ATTRB=(FSET,NORM,PROT),                    -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(20,5) 
+* M008-NO-ALUNO
+M008-NO-ALUNO9222222 DFHMDF ATTRB=(FSET,NORM,PROT),                    -
+               LENGTH=65,                                              -
+               POS=(20,15) 
+        DFHMDF LENGTH=79,                                              -
+               POS=(22,1),                                             -
+               INITIAL='------------------------------------------------
+               --------------------------------' 
+M008-MSG DFHMDF ATTRB=(BRT,FSET,PROT),                                 -
+               LENGTH=79,                                              -
+               POS=(23,1) 
+        DFHMDF LENGTH=79,                                              -
+               POS=(24,1),                                             -
+               INITIAL='F03-RETORNA F04-MENU F07-VOLTA F08-AVANCA      -
+                                        F12=FIM' 
+        DFHMSD TYPE=FINAL
+        END

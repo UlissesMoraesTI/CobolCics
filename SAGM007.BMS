@@ -1,0 +1,191 @@
+SAGM007 DFHMSD LANG=COBOL,                                             -
+               MODE=INOUT,                                             -
+               STORAGE=AUTO,                                           -
+               TIOAPFX=YES,                                            -
+               TYPE=&&SYSPARM 
+SAGM007 DFHMDI SIZE=(24,80) 
+        DFHMDF LENGTH=4,                                               -
+               POS=(1,1),                                              -
+               INITIAL='GA07' 
+M007-USERID DFHMDF ATTRB=(FSET,NORM,PROT),                             -
+               LENGTH=8,                                               -
+               POS=(1,7) 
+        DFHMDF ATTRB=(ASKIP,BRT),                                      -
+               LENGTH=27,                                              -
+               POS=(1,18),                                             -
+               INITIAL='SISTEMA DE GESTAO DE ALUNOS' 
+        DFHMDF LENGTH=11,                                              -
+               POS=(1,54),                                             -
+               INITIAL='COBOL #CICS' 
+M007-DATA DFHMDF ATTRB=(FSET,NORM,PROT),                               -
+               LENGTH=10,                                              -
+               POS=(1,70) 
+        DFHMDF LENGTH=70,                                              -
+               POS=(2,1),                                              -
+               INITIAL='SAG - MAINFRAME  LISTA - ALUNOS                -
+                  SAGPO007 #20 SAGM007' 
+M007-HORA DFHMDF ATTRB=(FSET,NORM,PROT),                               -
+               LENGTH=8,                                               -
+               POS=(2,72) 
+        DFHMDF LENGTH=79,                                              -
+               POS=(3,1),                                              -
+               INITIAL='------------------------------------------------
+               --------------------------------' 
+M007-PAGT DFHMDF LENGTH=4,                                             -
+               POS=(4,72),                                             -
+               INITIAL='PAG:' 
+M007-PAGN DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                           -
+               LENGTH=3,                                               -
+               PICOUT='ZZZ',                                           -
+               POS=(4,77) 
+        DFHMDF LENGTH=14,                                              -
+               POS=(5,1),                                              -
+               INITIAL='CODIGO    NOME' 
+* M007-CO-ALUNO
+M007-CO-ALUNO DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                       -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(6,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO DFHMDF ATTRB=(FSET,NORM,PROT),                           -
+               LENGTH=69,                                              -
+               POS=(6,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO2 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                      -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(7,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO2 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=69,                                              -
+               POS=(7,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO3 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                      -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(8,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO3 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=69,                                              -
+               POS=(8,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO4 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                      -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(9,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO4 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=69,                                              -
+               POS=(9,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO5 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                      -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(10,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO5 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=69,                                              -
+               POS=(10,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO6 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                      -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(11,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO6 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=69,                                              -
+               POS=(11,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO7 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                      -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(12,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO7 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=69,                                              -
+               POS=(12,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO8 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                      -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(13,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO8 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=69,                                              -
+               POS=(13,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO9 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                      -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(14,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO9 DFHMDF ATTRB=(FSET,NORM,PROT),                          -
+               LENGTH=69,                                              -
+               POS=(14,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO92 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                     -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(15,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO92 DFHMDF ATTRB=(FSET,NORM,PROT),                         -
+               LENGTH=69,                                              -
+               POS=(15,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO922 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                    -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(16,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO922 DFHMDF ATTRB=(FSET,NORM,PROT),                        -
+               LENGTH=69,                                              -
+               POS=(16,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO9222 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                   -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(17,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO9222 DFHMDF ATTRB=(FSET,NORM,PROT),                       -
+               LENGTH=69,                                              -
+               POS=(17,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO92222 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                  -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(18,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO92222 DFHMDF ATTRB=(FSET,NORM,PROT),                      -
+               LENGTH=69,                                              -
+               POS=(18,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO922222 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                 -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(19,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO922222 DFHMDF ATTRB=(FSET,NORM,PROT),                     -
+               LENGTH=69,                                              -
+               POS=(19,11) 
+* M007-CO-ALUNO
+M007-CO-ALUNO9222222 DFHMDF ATTRB=(FSET,NORM,NUM,PROT),                -
+               LENGTH=9,                                               -
+               PICOUT='9.999.999',                                     -
+               POS=(20,1) 
+* M007-NO-ALUNO
+M007-NO-ALUNO9222222 DFHMDF ATTRB=(FSET,NORM,PROT),                    -
+               LENGTH=69,                                              -
+               POS=(20,11) 
+        DFHMDF LENGTH=79,                                              -
+               POS=(22,1),                                             -
+               INITIAL='------------------------------------------------
+               --------------------------------' 
+M007-MSG DFHMDF ATTRB=(BRT,FSET,PROT),                                 -
+               LENGTH=79,                                              -
+               POS=(23,1) 
+        DFHMDF LENGTH=79,                                              -
+               POS=(24,1),                                             -
+               INITIAL='F03-RETORNA F04-MENU F07-VOLTA F08-AVANCA      -
+                                        F12=FIM' 
+        DFHMSD TYPE=FINAL
+        END
